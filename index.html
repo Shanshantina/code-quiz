@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to the css stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <!-- Link to highscore -->
+    <header id="viewscore">
+        <a href="highscore.html">View Highscore</a>
+    </header>
+    
+    <!-- wrap all the items in-->
+    <div id="container">
+        <!-- count time -->
+        <div id="timer"></div>
+        <!-- questions container -->
+        <div id="questionContainer">
+            <h1 class="grid-item">Coding Quiz</h1>
+            <p class="grid-item">Try to answer the following coding questions within the time limit. Penalty will be subtracted from your time if the answer is incorrect.</p>
+            <!-- multiple choices -->
+            <ul id="multiplechoice" class="grid-item"></ul>
+            <!-- start the quiz -->
+            <button id="startquiz" class="grid-item">Start Quiz</button>
+        </div>
+    </div>
+    
+    <!-- link to main script for the quiz -->
+    <script src="./assets/js/mainquiz.js"></script>    
+</body>
+</html>

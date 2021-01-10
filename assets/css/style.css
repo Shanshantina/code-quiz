@@ -1,0 +1,252 @@
+:root {
+    --light-green: rgba(158, 216, 196, 0.8);
+    --dark-green: #2b5d2f;
+}
+
+
+body {
+    background-image: url(../image/background.jpeg);
+    background-size: cover;    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    color: var(--dark-green);
+    height: 36.2em;
+}
+
+/* header style start */
+#viewscore {
+    background-color: var(--light-green);
+    height: 8vw;
+}
+
+#viewscore a {
+    font-size: 26px;
+    color: var(--dark-green);
+    padding: 45px 0 0 18px;
+    display: flex;
+    text-decoration: none;
+}
+/* header style end */
+
+/* timer style */
+#timer {
+    float: right;
+    margin: 10px 10px;
+    font-size: 24px;
+}
+
+/* quiz main body area style start*/
+#container {
+    position: absolute;
+    left: 20%;
+    top: 21%;
+    width: 58vw;
+    height: 35vw;
+}
+
+.grid-item {
+    min-height: 6vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#questionContainer {
+    margin: 20px;
+}
+
+#questionContainer p {
+    line-height: 1.5;
+    text-align: inherit;
+    margin-top: 20px;
+}
+/* quiz main body area style end*/
+
+/* start quiz button style start */
+#startquiz {
+    width: 14vw;
+    padding: 11px 17px;
+    background: var(--light-green);
+    font-size: 2.2rem;
+    border-radius: 12px;
+    position: relative;
+    top: 1vw;
+    box-shadow: 0 3px var(--dark-green);
+    color: var(--dark-green);
+}
+
+#startquiz:hover{
+    background: var(--dark-green);
+    color : var(--light-green);
+}
+
+#startquiz:focus {
+    outline: none;
+}
+/* start quiz button style end */
+
+/* choices style start */
+li {
+    
+    margin: 27px 0 0 31px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 31px;
+}
+
+li:hover {
+    background-color: var(--light-green);
+    border-radius: 50px;
+}
+/* choices style end */
+
+/* ending page style start */
+#message {
+    margin: 58px 0 0 22px;
+    border-top: 2px solid var(--light-green);
+}
+
+#createHeading {
+    margin: 26px 0 0 22px;
+}
+
+#getScore, #label, #initials {
+    margin-left: 22px;
+}
+
+label {
+    margin-right: -10px;
+}
+input {
+    padding-left: 12px;
+    font-size: 24px;
+    height: 41px;
+    margin-bottom: 20px;
+    width: 45%;
+    border: 2px solid var(--dark-green);
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#submit {
+    padding: 11px 17px;
+    margin-left: 29px;
+    background: var(--light-green);
+    font-size: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 3px var(--dark-green);
+    color: var(--dark-green);
+}
+
+#submit:hover {
+    background: var(--dark-green);
+    color : var(--light-green);
+}
+
+#submit:focus {
+    outline: none;
+}
+/* ending page style ends */
+
+/* highscore page button style start */
+#highscore {
+    display: inherit;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#btn {
+    min-height: 6vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#goback {   
+    padding: 11px 12px;
+    background: var(--light-green);
+    font-size: 20px;
+    border-radius: 12px;
+    position: relative;
+    top: 1vw;
+    box-shadow: 0 3px var(--dark-green);
+    color: var(--dark-green);
+}
+
+#goback:hover {
+    background: var(--dark-green);
+    color : var(--light-green);
+}
+
+#goback:focus {
+    outline: none;
+}
+
+#clear {
+    margin-left: 5vw;
+    padding: 11px 12px;
+    background: var(--light-green);
+    font-size: 20px;
+    border-radius: 12px;
+    position: relative;
+    top: 1vw;
+    box-shadow: 0 3px var(--dark-green);
+    color: var(--dark-green);
+}
+
+#clear:hover{
+    background: var(--dark-green);
+    color : var(--light-green);
+}
+
+#clear:focus {
+    outline: none;
+}
+/* highscore page button style end */
+
+/* media query for screen = < 980px */
+@media screen and (max-width: 980px) {
+    #viewscore a {
+        padding: 18px 0 0 12px;
+    }
+
+    #timer {
+        font-size: 21px;
+    }
+}
+
+/* media query for screen = < 768px */
+@media screen and (max-width: 768px) {
+    #viewscore a {
+        padding: 7px 0 0 12px;
+    }
+
+    #startquiz {
+        font-size: 32px;
+    }
+}
+
+/* media query for screen = < 575px */
+@media screen and (max-width: 575px) {
+    #viewscore a {
+        padding: 0;
+    }
+
+    #startquiz {
+        font-size: 22px;
+    }
+
+    #timer {
+        font-size: 20px;
+    }
+}
